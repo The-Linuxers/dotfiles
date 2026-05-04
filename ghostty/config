@@ -1,0 +1,61 @@
+# =============================================================================
+# Theme
+# =============================================================================
+theme = Dracula
+window-colorspace = display-p3
+
+# =============================================================================
+# Colors
+# =============================================================================
+background = "000000"
+foreground = "FAE3C6"
+selection-background = "F564A9"
+selection-foreground = "FAE3C6"
+selection-clear-on-copy = false
+
+# =============================================================================
+# Font
+# =============================================================================
+font-family = JetBrains Mono
+font-family-bold = JetBrains Mono Bold
+font-family-italic = JetBrains Mono Italic
+font-family-bold-italic = JetBrains Mono Bold Italic
+font-size = 18
+font-thicken = true
+adjust-cursor-thickness = 175%
+adjust-cell-height = 17%
+
+# =============================================================================
+# Window & Appearance
+# =============================================================================
+macos-titlebar-style = tabs
+title = " "
+
+# Opacity & Blur
+background-opacity = 0.80
+background-opacity-cells = false
+background-blur = 50
+unfocused-split-opacity = 0.4
+
+# Custom shader overlay
+custom-shader = ./ghostty-shaders/slash.glsl
+
+# =============================================================================
+# Keybindings
+# =============================================================================
+macos-option-as-alt = true
+
+# Split navigation (Ctrl + Vim keys)
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+# Split creation (Ctrl+A prefix + Vim keys)
+keybind = ctrl+a>h=new_split:left
+keybind = ctrl+a>j=new_split:down
+keybind = ctrl+a>k=new_split:up
+keybind = ctrl+a>l=new_split:right
+
+# General
+keybind = super+r=reload_config
